@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact</title>
+    <style>
+      /* Estilos para la página */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      header {
+        background-color: #f1f1f1;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+        .nav-links {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        }
+
+        .nav-links a {
+        color: #333;
+        text-decoration: none;
+        padding: 5px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        margin-right: 10px;
+        }
+
+        .nav-links a:last-child {
+        margin-right: 0;
+        margin-left: 80;
+        }
+
+
+      .nav-links a:hover {
+        background-color: #333;
+        color: #fff;
+      }
+
+      /* Estilos para el formulario */
+      form {
+        width: 60%;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        resize: none;
+      }
+
+      textarea {
+        height: 150px;
+      }
+
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #444;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+      </nav>
+    </header>
+
+    <form action="mailto:raulalonso20052005@gmail.com" method="POST" enctype="text/plain">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" required></textarea>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </body>
+</html>
